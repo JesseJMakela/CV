@@ -1,0 +1,197 @@
+/* Minimal custom styles - Tailwind handles most styling */
+
+/* Print styles - optimized for A4 */
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  
+  * {
+    background: white !important;
+    color: black !important;
+  }
+  
+  body {
+    background: white !important;
+    font-size: 9pt !important;
+    line-height: 1.3 !important;
+  }
+  
+  .print\:hidden {
+    display: none !important;
+  }
+  
+  /* Remove shadows and borders for print */
+  * {
+    box-shadow: none !important;
+    border-color: #e5e7eb !important;
+  }
+  
+  /* Ensure good contrast for print */
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+  
+  /* Compact layout for A4 */
+  main {
+    display: grid !important;
+    grid-template-columns: 200px 1fr !important;
+    gap: 12px !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Reduce all spacing */
+  aside, section {
+    padding: 0 !important;
+  }
+  
+  aside > * {
+    margin-bottom: 8px !important;
+  }
+  
+  section > * {
+    margin-bottom: 8px !important;
+  }
+  
+  /* Compact headings */
+  h1 {
+    font-size: 18pt !important;
+    margin: 0 0 2px 0 !important;
+  }
+  
+  h2 {
+    font-size: 12pt !important;
+    margin: 0 0 4px 0 !important;
+    font-weight: bold !important;
+  }
+  
+  h3 {
+    font-size: 10pt !important;
+    margin: 0 0 2px 0 !important;
+    font-weight: 600 !important;
+  }
+  
+  h4 {
+    font-size: 9pt !important;
+    margin: 0 !important;
+  }
+  
+  p {
+    margin: 0 0 4px 0 !important;
+  }
+  
+  /* Compact lists */
+  ul, ol {
+    margin: 0 !important;
+    padding-left: 12px !important;
+  }
+  
+  li {
+    margin-bottom: 2px !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Compact cards/sections */
+  article, section {
+    padding: 4px !important;
+    margin-bottom: 6px !important;
+    border: none !important;
+  }
+  
+  /* Hide avatar for space */
+  svg {
+    display: none !important;
+  }
+  
+  /* Compact profile */
+  .text-2xl {
+    font-size: 14pt !important;
+  }
+  
+  .text-xl {
+    font-size: 12pt !important;
+  }
+  
+  .text-lg {
+    font-size: 10pt !important;
+  }
+  
+  .text-sm, .text-base {
+    font-size: 9pt !important;
+  }
+  
+  .text-xs {
+    font-size: 8pt !important;
+  }
+  
+  /* Remove excessive padding */
+  .p-5, .p-6 {
+    padding: 4px !important;
+  }
+  
+  .px-6, .py-8, .py-6 {
+    padding: 0 !important;
+  }
+  
+  .mb-3, .mb-4 {
+    margin-bottom: 3px !important;
+  }
+  
+  .mb-6 {
+    margin-bottom: 4px !important;
+  }
+  
+  .pb-6 {
+    padding-bottom: 4px !important;
+  }
+  
+  .space-y-6 > * + * {
+    margin-top: 6px !important;
+  }
+  
+  .space-y-2 > * + * {
+    margin-top: 2px !important;
+  }
+  
+  .gap-6 {
+    gap: 8px !important;
+  }
+  
+  /* Ensure single page */
+  aside {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  article {
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+  
+  .border-b {
+    border-bottom: 1px solid #ddd !important;
+  }
+}
+
+/* Theme toggle - smooth transitions */
+html.dark {
+  color-scheme: dark;
+}
+
+/* Ensure smooth theme transitions */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+  outline: 3px solid rgba(96, 165, 250, 0.5);
+  outline-offset: 2px;
+}

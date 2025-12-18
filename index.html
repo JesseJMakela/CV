@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Jesse Mäkelä - Software Development Student CV" />
+  <title>Jesse Mäkelä — CV</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="theme-color" content="#0f1724">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors">
+  <!-- Header -->
+  <header class="border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 print:hidden">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div>
+        <h1 class="text-xl font-bold">Jesse Mäkelä</h1>
+        <p class="text-sm text-slate-600 dark:text-slate-400">Software Development Student</p>
+      </div>
+      <nav class="flex gap-2">
+        <button id="printBtn" class="px-3 py-1.5 text-sm border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" title="Download / Print">Download PDF</button>
+        <button id="themeToggle" class="px-3 py-1.5 text-lg border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-6 py-8 grid lg:grid-cols-[320px_1fr] gap-6">
+    <!-- Sidebar -->
+    <aside class="space-y-6">
+      <!-- Profile -->
+      <div class="text-center lg:text-left">
+        <svg class="w-32 h-32 mx-auto lg:mx-0 mb-4" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad" x1="0" x2="1">
+              <stop offset="0" stop-color="#5eead4"/>
+              <stop offset="1" stop-color="#60a5fa"/>
+            </linearGradient>
+          </defs>
+          <rect width="120" height="120" rx="16" fill="#0f1724" />
+          <circle cx="60" cy="44" r="26" fill="url(#grad)" />
+          <rect x="20" y="80" width="80" height="18" rx="6" fill="#94a3b8" />
+        </svg>
+        <h2 class="text-2xl font-bold">Jesse Mäkelä</h2>
+        <p class="text-slate-600 dark:text-slate-400 mt-1">Software Development Student</p>
+      </div>
+
+      <!-- Contact -->
+      <section class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border border-slate-200 dark:border-slate-700">
+        <h3 class="font-bold text-lg mb-3">Contact</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="break-words">
+            <strong>Address:</strong><br>
+            Kaivosuonkatu 2b<br>
+            53850, Lappeenranta
+          </li>
+          <li class="break-words">
+            <strong>Email:</strong><br>
+            <a href="mailto:jesse.j.makela@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">jesse.j.makela@gmail.com</a>
+          </li>
+          <li>
+            <strong>Phone:</strong><br>
+            <a href="tel:+358442102215" class="text-blue-600 dark:text-blue-400 hover:underline">+358 44 2102215</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Skills -->
+      <section class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border border-slate-200 dark:border-slate-700">
+        <h3 class="font-bold text-lg mb-3">Skills</h3>
+        <ul class="space-y-2 text-sm">
+          <li>• Customer service</li>
+          <li>• Software development</li>
+          <li>• Team work</li>
+          <li>• People skills</li>
+          <li>• Empathy</li>
+          <li>• Leadership</li>
+        </ul>
+        <div class="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
+          <p class="text-xs font-semibold text-slate-600 dark:text-slate-400 mb-2">TECHNICAL SKILLS</p>
+          <p class="text-sm">Python, C, Java, HTML, SQL, Software testing, Project management</p>
+        </div>
+      </section>
+
+      <!-- Social -->
+      <section class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border border-slate-200 dark:border-slate-700">
+        <h3 class="font-bold text-lg mb-3">Social</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="https://linkedin.com/in/jessejmakela" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-2">
+              <span>🔗</span> LinkedIn - jessejmakela
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JesseJMakela" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-2">
+              <span>💻</span> GitHub - JesseJMakela
+            </a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="space-y-6">
+      <!-- About Me -->
+      <article class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
+        <h2 class="text-2xl font-bold mb-3">About Me</h2>
+        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+          I am a second-year student at LUT University, eager to learn and find my place in the industry. I enjoy collaborating with others and I like to learn new things. In my free time, I'm passionate about bouldering and video games, and I also sing in a band.
+        </p>
+      </article>
+
+      <!-- Education -->
+      <article class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
+        <h2 class="text-2xl font-bold mb-4">Education</h2>
+        <div>
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="font-semibold text-lg">Bachelor of Software Engineering</h3>
+            <span class="text-sm text-slate-600 dark:text-slate-400">2023 - now</span>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400">LUT University</p>
+        </div>
+      </article>
+
+      <!-- Experience -->
+      <article class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
+        <h2 class="text-2xl font-bold mb-4">Experience</h2>
+        
+        <!-- Motonet -->
+        <div class="mb-6 pb-6 border-b border-slate-200 dark:border-slate-700 last:border-0 last:pb-0 last:mb-0">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-semibold text-lg">Department Store Salesperson</h3>
+            <span class="text-sm text-slate-600 dark:text-slate-400">May 2024 - Aug 2024</span>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 mb-2">Motonet</p>
+          <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+            I provided exceptional customer service by assisting customers with product selection, maintaining merchandise displays, and handling transactions. Contributed to a positive shopping experience while ensuring store operations ran smoothly and efficiently.
+          </p>
+        </div>
+
+        <!-- Military Service -->
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-semibold text-lg">Viestikeskus Joukkueen Alikersantti</h3>
+            <span class="text-sm text-slate-600 dark:text-slate-400">Aug 2022 - Aug 2023</span>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 mb-2">Military Service</p>
+          <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+            Palvelin Utin jääkärirykmentin tukikomppaniassa
+          </p>
+        </div>
+      </article>
+
+      <!-- Guild Work -->
+      <article class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
+        <h2 class="text-2xl font-bold mb-4">Guild Work for Cluster</h2>
+        
+        <!-- Current Role -->
+        <div class="mb-6 pb-6 border-b border-slate-200 dark:border-slate-700">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-semibold text-lg">Advocacy and Course Feedback Representative</h3>
+            <span class="text-sm text-slate-600 dark:text-slate-400">2024 - 2026</span>
+          </div>
+          <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+            I am continuing as a member of the Cluster Guild board, serving as an advocacy representative. I will also be organizing guild coffee sessions and overseeing course feedback processes.
+          </p>
+        </div>
+
+        <!-- Previous Role -->
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-semibold text-lg">EI - sector, Host</h3>
+            <span class="text-sm text-slate-600 dark:text-slate-400">2024 - 2025</span>
+          </div>
+          <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+            I served as one of the event organizers and board members for the Cluster Guild. I was responsible for organizing various events for our guild and for everyone. The events I organized included activities such as academic dinner parties (sitsit), sauna evenings, and video game events.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-700 mt-12 py-6 print:hidden">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm text-slate-600 dark:text-slate-400">
+      <p> Last update 18.12.2025</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
