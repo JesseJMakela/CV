@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="fi">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Jesse Mäkelä - Software Development Student CV" />
+  <meta name="description" content="Jesse Mäkelä - Ohjelmistotekniikan opiskelija CV" />
   <title>Jesse Mäkelä — CV</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -29,12 +29,12 @@
   <header class="border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 print:hidden">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <div>
-        <h1 class="text-xl font-bold">Jesse Mäkelä</h1>
-        <p class="text-sm text-slate-600 dark:text-slate-400">Software Development Student</p>
+        <h1 class="text-xl font-bold">Jesse Mäkelä - CV</h1>
       </div>
       <nav class="flex gap-2">
-        <button id="printBtn" class="px-3 py-1.5 text-sm border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" title="Download / Print">Download PDF</button>
-        <button id="themeToggle" class="px-3 py-1.5 text-lg border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" aria-label="Toggle theme">🌙</button>
+        <a href="english/index.html" class="inline-flex items-center justify-center px-3 py-1.5 text-sm border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" title="Switch to English">English</a>
+        <button id="printBtn" class="px-3 py-1.5 text-sm border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" title="Lataa / Tulosta">Lataa PDF</button>
+        <button id="themeToggle" class="px-3 py-1.5 text-lg border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition" aria-label="Vaihda teema">🌙</button>
       </nav>
     </div>
   </header>
@@ -45,36 +45,23 @@
     <aside class="space-y-6">
       <!-- Profile -->
       <div class="text-center lg:text-left">
-        <svg class="w-32 h-32 mx-auto lg:mx-0 mb-4" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="grad" x1="0" x2="1">
-              <stop offset="0" stop-color="#5eead4"/>
-              <stop offset="1" stop-color="#60a5fa"/>
-            </linearGradient>
-          </defs>
-          <rect width="120" height="120" rx="16" fill="#0f1724" />
-          <circle cx="60" cy="44" r="26" fill="url(#grad)" />
-          <rect x="20" y="80" width="80" height="18" rx="6" fill="#94a3b8" />
-        </svg>
-        <h2 class="text-2xl font-bold">Jesse Mäkelä</h2>
-        <p class="text-slate-600 dark:text-slate-400 mt-1">Software Development Student</p>
+        <img src="img/jesse_makela (1).jpg" alt="Jesse Mäkelä" class="max-w-xs mx-auto lg:mx-0 mb-4 rounded-2xl shadow-lg">
       </div>
 
       <!-- Contact -->
       <section class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border border-slate-200 dark:border-slate-700">
-        <h3 class="font-bold text-lg mb-3">Contact</h3>
+        <h3 class="font-bold text-lg mb-3">Yhteystiedot</h3>
         <ul class="space-y-2 text-sm">
           <li class="break-words">
-            <strong>Address:</strong><br>
-            Kaivosuonkatu 2b<br>
-            53850, Lappeenranta
+            <strong>Asuinpaikka:</strong><br>
+            Lappeenranta, Suomi
           </li>
           <li class="break-words">
-            <strong>Email:</strong><br>
+            <strong>Sähköposti:</strong><br>
             <a href="mailto:jesse.j.makela@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">jesse.j.makela@gmail.com</a>
           </li>
           <li>
-            <strong>Phone:</strong><br>
+            <strong>Puhelin:</strong><br>
             <a href="tel:+358442102215" class="text-blue-600 dark:text-blue-400 hover:underline">+358 44 2102215</a>
           </li>
         </ul>
@@ -82,24 +69,28 @@
 
       <!-- Skills -->
       <section class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border border-slate-200 dark:border-slate-700">
-        <h3 class="font-bold text-lg mb-3">Skills</h3>
+        <h3 class="font-bold text-lg mb-3">Taidot</h3>
         <ul class="space-y-2 text-sm">
-          <li>• Customer service</li>
-          <li>• Software development</li>
-          <li>• Team work</li>
-          <li>• People skills</li>
-          <li>• Empathy</li>
-          <li>• Leadership</li>
+          <li>• Asiakaspalvelu</li>
+          <li>• Ohjelmistokehitys</li>
+          <li>• Tiimityö</li>
+          <li>• Ihmistaidot</li>
+          <li>• Empatia</li>
+          <li>• Johtajuus</li>
         </ul>
         <div class="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
-          <p class="text-xs font-semibold text-slate-600 dark:text-slate-400 mb-2">TECHNICAL SKILLS</p>
-          <p class="text-sm">Python, C, Java, HTML, SQL, Software testing, Project management</p>
+          <p class="text-xs font-semibold text-slate-600 dark:text-slate-400 mb-2">Tekniset taidot</p>
+          <p class="text-sm">Web-devlopment, databases, sofware testing, project management</p>
+        </div>
+        <div class="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
+          <p class="text-xs font-semibold text-slate-600 dark:text-slate-400 mb-2"> Ohjelmointikielet</p>
+          <p class="text-sm">HTML, CSS, JavaScript, Python, Java, C, Rust, SQL</p>
         </div>
       </section>
 
       <!-- Social -->
       <section class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border border-slate-200 dark:border-slate-700">
-        <h3 class="font-bold text-lg mb-3">Social</h3>
+        <h3 class="font-bold text-lg mb-3">Lisää minusta</h3>
         <ul class="space-y-2 text-sm">
           <li>
             <a href="https://linkedin.com/in/jessejmakela" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-2">
@@ -119,76 +110,120 @@
     <section class="space-y-6">
       <!-- About Me -->
       <article class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
-        <h2 class="text-2xl font-bold mb-3">About Me</h2>
-        <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
-          I am a second-year student at LUT University, eager to learn and find my place in the industry. I enjoy collaborating with others and I like to learn new things. In my free time, I'm passionate about bouldering and video games, and I also sing in a band.
-        </p>
+        <h2 class="text-2xl font-bold mb-3">Lyhyesti minusta</h2>
+        <div class="flex flex-col md:flex-row gap-4 items-start">
+          <p class="text-slate-700 dark:text-slate-300 leading-relaxed flex-1">
+            Olen kolmannen vuoden tietotekniikan opiskelija LUT-yliopistossa. Olen innokas oppimaan ja löytämään paikkani alallani. Nautin yhdessä tekemisestä, ja siksi vapaa-ajallani olen aktiivijäsen useassa yliopiston killassa ja kerhossa. Harrastan myös boulderointia ja videopelejä sekä laulan opiskelijabändissä Qlicks.
+          </p>
+          <img src="img/lauluMV.webp" alt="Jesse singing" class="w-32 h-32 rounded-xl object-cover shadow-lg print:hidden">
+        </div>
       </article>
 
       <!-- Education -->
       <article class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
-        <h2 class="text-2xl font-bold mb-4">Education</h2>
+        <h2 class="text-2xl font-bold mb-4">Koulutus</h2>
+        
+        <!-- High School -->
+        <div class="mb-6 pb-6 border-b border-slate-200 dark:border-slate-700">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="font-semibold text-lg">Ylioppilastutkinto</h3>
+            <span class="text-sm text-slate-600 dark:text-slate-400">2019 - 2022</span>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400">Lappeenrannan lyseon lukio</p>
+        </div>
+        
+        <!-- Leadership Training -->
+        <div class="mb-6 pb-6 border-b border-slate-200 dark:border-slate-700">
+          <h3 class="font-semibold text-lg mb-3">Johtaja Koulutus</h3>
+          <div class="flex justify-between items-start mb-1">
+            <p class="text-slate-700 dark:text-slate-300">Varusmiespalvelus</p>
+            <span class="text-sm text-slate-600 dark:text-slate-400">Elo 2022 - Elo 2023</span>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400">Viestikeskus alikersantti, Utin jääkärirykmentti</p>
+        </div>
+        
+        <!-- Academic Education -->
         <div>
           <div class="flex justify-between items-start mb-1">
-            <h3 class="font-semibold text-lg">Bachelor of Software Engineering</h3>
-            <span class="text-sm text-slate-600 dark:text-slate-400">2023 - now</span>
+            <h3 class="font-semibold text-lg">Tekn. Kand. Tietotekniikka</h3>
+            <span class="text-sm text-slate-600 dark:text-slate-400">2023 - nyt</span>
           </div>
-          <p class="text-slate-600 dark:text-slate-400">LUT University</p>
+          <p class="text-slate-600 dark:text-slate-400 mb-2">LUT-yliopisto</p>
+          <p class="text-slate-700 dark:text-slate-300 text-sm">Suoritetut opintopisteet: 139 op</p>
+          <p class="text-slate-700 dark:text-slate-300 text-sm mt-1">
+            Kandidaatintyö: <a href="https://urn.fi/URN:NBN:fi-fe2025081883123" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">Pelimoottorin vaihdon vaikutus käyttäjäkokemukseen : case: Counter-Strike</a>
+          </p>
         </div>
       </article>
 
       <!-- Experience -->
       <article class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
-        <h2 class="text-2xl font-bold mb-4">Experience</h2>
+        <h2 class="text-2xl font-bold mb-4">Työkokemus</h2>
         
         <!-- Motonet -->
-        <div class="mb-6 pb-6 border-b border-slate-200 dark:border-slate-700 last:border-0 last:pb-0 last:mb-0">
+        <div>
           <div class="flex justify-between items-start mb-2">
-            <h3 class="font-semibold text-lg">Department Store Salesperson</h3>
-            <span class="text-sm text-slate-600 dark:text-slate-400">May 2024 - Aug 2024</span>
+            <h3 class="font-semibold text-lg">Tavaratalon myyjä</h3>
+            <span class="text-sm text-slate-600 dark:text-slate-400">Touko 2024 - Elo 2024</span>
           </div>
           <p class="text-slate-600 dark:text-slate-400 mb-2">Motonet</p>
           <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
-            I provided exceptional customer service by assisting customers with product selection, maintaining merchandise displays, and handling transactions. Contributed to a positive shopping experience while ensuring store operations ran smoothly and efficiently.
-          </p>
-        </div>
-
-        <!-- Military Service -->
-        <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-semibold text-lg">Viestikeskus Joukkueen Alikersantti</h3>
-            <span class="text-sm text-slate-600 dark:text-slate-400">Aug 2022 - Aug 2023</span>
-          </div>
-          <p class="text-slate-600 dark:text-slate-400 mb-2">Military Service</p>
-          <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
-            Palvelin Utin jääkärirykmentin tukikomppaniassa
+            Työskentelin myyjänä ja asiakaspalvelijana monipuolisissa tehtävissä kassalla, infopisteessä ja myymälässä. Opin uudet järjestelmät nopeasti ja toimin työssäni oma-aloitteisesti. Asiakaspalvelusta saamani palaute oli kiitettävää, ja tulin sujuvasti toimeen erilaisten asiakkaiden sekä työkavereideni kanssa. Ratkaisin ongelmatilanteita näppärästi ja osasin tarvittaessa pyytää apua.
           </p>
         </div>
       </article>
 
-      <!-- Guild Work -->
+      <!-- Student Organization Activities -->
       <article class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
-        <h2 class="text-2xl font-bold mb-4">Guild Work for Cluster</h2>
+        <h2 class="text-2xl font-bold mb-4">Opiskelijajärjestötoiminta</h2>
         
-        <!-- Current Role -->
+        <!-- Cluster -->
         <div class="mb-6 pb-6 border-b border-slate-200 dark:border-slate-700">
+          <h3 class="font-semibold text-lg mb-3">Cluster.ry</h3>
+          
+          <!-- Previous Role -->
+          <div class="mb-4">
+            <div class="flex justify-between items-start mb-2">
+              <h4 class="font-semibold">EI sektori, Emäntä</h4>
+              <span class="text-sm text-slate-600 dark:text-slate-400">2024 - 2025</span>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+              Toimin yhtenä tapahtumanjärjestäjänä ja hallituksen jäsenenä Cluster-killassa. 
+            </p>
+          </div>
+
+          <!-- Current Role -->
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h4 class="font-semibold">Edunvalvonta- ja kurssipalautteenvastaava</h4>
+              <span class="text-sm text-slate-600 dark:text-slate-400">2025 - 2026</span>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+              Edunvalvonta lappeenrannan tietotekniikan opiskelijoille, sekä kurssipalautteiden kerääminen ja analysointi yhteistyössä opiskelijoiden ja opetushenkilökunnan kanssa.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ruut.ry -->
+        <div class="mb-6 pb-6 border-b border-slate-200 dark:border-slate-700">
+          <h3 class="font-semibold text-lg mb-3">Ruut.ry</h3>
           <div class="flex justify-between items-start mb-2">
-            <h3 class="font-semibold text-lg">Advocacy and Course Feedback Representative</h3>
-            <span class="text-sm text-slate-600 dark:text-slate-400">2024 - 2026</span>
+            <h4 class="font-semibold">Varapuheenjohtaja</h4>
+            <span class="text-sm text-slate-600 dark:text-slate-400">2026 - nyt</span>
           </div>
           <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
-            I am continuing as a member of the Cluster Guild board, serving as an advocacy representative. I will also be organizing guild coffee sessions and overseeing course feedback processes.
+            Videopeli- ja erityisesti LAN-tapahtumien järjestäminen.
           </p>
         </div>
 
-        <!-- Previous Role -->
+        <!-- Powi.ry -->
         <div>
           <div class="flex justify-between items-start mb-2">
-            <h3 class="font-semibold text-lg">EI - sector, Host</h3>
-            <span class="text-sm text-slate-600 dark:text-slate-400">2024 - 2025</span>
+            <h3 class="font-semibold text-lg">Powi.ry</h3>
+            <span class="text-sm text-slate-600 dark:text-slate-400">2025 - nyt</span>
           </div>
           <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
-            I served as one of the event organizers and board members for the Cluster Guild. I was responsible for organizing various events for our guild and for everyone. The events I organized included activities such as academic dinner parties (sitsit), sauna evenings, and video game events.
+            Vappulehti Hässi, Kyykkä ja Opiskelijakulttuuri
           </p>
         </div>
       </article>
@@ -198,7 +233,7 @@
   <!-- Footer -->
   <footer class="border-t border-slate-200 dark:border-slate-700 mt-12 py-6 print:hidden">
     <div class="max-w-6xl mx-auto px-6 text-center text-sm text-slate-600 dark:text-slate-400">
-      <p> Last update 18.12.2025</p>
+      <p>Viimeksi päivitetty 27.12.2025</p>
     </div>
   </footer>
 

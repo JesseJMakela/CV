@@ -1,4 +1,9 @@
-/* Minimal custom styles - Tailwind handles most styling */
+/* Improve image quality */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: bicubic;
+}
 
 /* Print styles - optimized for A4 */
 @media print {
