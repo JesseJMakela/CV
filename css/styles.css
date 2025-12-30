@@ -5,6 +5,16 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+/* Better font rendering for print */
+@media print {
+  body, * {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+  }
+}
+
 /* Print styles - optimized for A4 */
 @media print {
   @page {
