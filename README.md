@@ -1,8 +1,8 @@
 # Jesse Mäkelä - CV Website
 
-## 🔗 Website Link
+## 🔗 Link to the website
 
-[View Live Website](https://jessejmakela.github.io/CV/)
+[Click here](https://jessejmakela.github.io/CV/)
 
 ## 📝 About (English)
 
